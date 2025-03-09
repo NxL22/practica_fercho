@@ -1,0 +1,67 @@
+## Desafío Final de Bootcamp - Backend
+
+### Objetivo
+
+Desarrollar una API REST utilizando Node.js, Express, Sequelize, JWT, aplicando buenas prácticas y seguridad para la autenticación y autorización. Este desafío evaluará tus habilidades para diseñar una API segura, escalable y bien estructurada.
+
+### Requerimientos mínimos:
+
+#### 1. Autenticación y autorización (20 puntos)
+- Implementar registro y login de usuarios.
+- Usar JWT para proteger rutas privadas.
+- Validar token en middleware para proteger endpoints.
+
+#### 2. CRUD con Sequelize (20 puntos)
+- Definir al menos tres modelos relacionados (Ejemplo: Usuarios, Posts, Comentarios).
+- Establecer asociaciones adecuadas entre modelos (uno a muchos o muchos a muchos).
+
+#### 3. Manejo de errores (15 puntos)
+- Implementar manejo global de errores usando middlewares.
+- Proporcionar mensajes útiles y claros de errores.
+
+#### 4. Manejo de Roles (15 puntos)
+- Crear un sistema sencillo de roles (usuario y administrador).
+- Limitar ciertas acciones exclusivamente a administradores.
+
+#### 5. Validaciones (10 puntos)
+- Validar entradas con Joi o Express Validator.
+- Manejar casos de borde como datos duplicados o incorrectos.
+
+#### 6. Buenas Prácticas (10 puntos)
+- Implementar una estructura limpia de carpetas (MVC).
+- Utilizar variables de entorno para configuraciones sensibles.
+- Usar .env para manejar variables de entorno.
+- Controlar errores con try-catch en todas las funciones asíncronas.
+
+#### 7. Despliegue (10 puntos)
+- El proyecto debe estar desplegado en Railway.
+- Subir el código a GitHub y compartir enlace público.
+
+### Ejemplo de estructura:
+
+- src
+  - controllers
+  - services
+  - routes
+  - middlewares
+  - models
+  - utils
+  - validators
+- config
+- .env
+
+
+### Criterios de evaluación:
+- Organización y limpieza del código. Mantén funciones pequeñas y claras, utiliza nombres descriptivos para variables y funciones, elimina código duplicado y asegúrate de comentar adecuadamente el código cuando sea necesario.
+- Uso adecuado de Sequelize para manejo de bases de datos.
+- Correcta implementación de seguridad con JWT. Establece tiempos de expiración adecuados para los tokens, asegura su almacenamiento seguro y considera prácticas adicionales como el uso de refresh tokens para mejorar la seguridad.
+- Eficiencia en las consultas a la base de datos. Utiliza índices apropiados, evita consultas innecesarias y optimiza las operaciones CRUD para mejorar el rendimiento general.
+- Capacidad de resolver errores de manera efectiva y prolija. Documenta errores frecuentes junto con sus soluciones para facilitar futuras resoluciones y aprendizaje.
+
+### Bonus (Opcional, 10 puntos adicionales):
+- Implementación de relaciones complejas en Sequelize (1:N, N:M). Utiliza métodos como hasMany, belongsTo, belongsToMany, y asegúrate de configurar correctamente las tablas intermedias o junction tables para las relaciones N:M. Documenta claramente estas relaciones en tu código y explica brevemente en la documentación del proyecto cómo funcionan estas asociaciones.
+- Implementar paginación y filtros avanzados en las rutas GET. Aplica métodos como limit, offset o cursor para implementar paginación eficiente. Además, permite filtros dinámicos y avanzados mediante query params para buscar, ordenar o filtrar los resultados de acuerdo a diferentes criterios, asegurando consultas rápidas y optimizadas.
+- Integración con WebSockets para notificaciones en tiempo real. Utiliza Socket.IO o una biblioteca similar para establecer conexiones en tiempo real con los clientes. Asegúrate de gestionar correctamente las conexiones y desconexiones, así como la emisión y recepción de eventos de forma eficiente. Documenta brevemente cómo se integra y utiliza esta funcionalidad en tu proyecto.
+
+### Entrega:
+- Documentación básica en README.md explicando el uso y despliegue.
