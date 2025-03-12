@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import saludoRoutes from "./routes/saludo.routes.js"; 
+import saludoRoutes from "../routes/saludo.routes.js"; 
 
 const expressApp = express();
 
